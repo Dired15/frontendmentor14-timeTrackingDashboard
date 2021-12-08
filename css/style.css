@@ -1,0 +1,199 @@
+body
+{
+    user-select:none;
+    background-color:hsl(226, 43%, 10%);
+    display:flex;
+    justify-content:center;
+    
+}
+
+body *
+{
+    box-sizing:border-box;
+    font-size:18px;
+    margin:0px;
+
+}
+
+.sr-only
+{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+}
+
+button
+{
+    background-color:inherit;
+}
+
+#main
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:1.5em;
+    height:70vh;
+    width:80vw;
+
+}
+
+#profile
+{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+
+    background-color:hsl(235, 46%, 20%);
+    display:flex;
+    flex-direction:column;
+    color:white;
+
+    
+    border-radius:18px;
+
+}
+
+#profileInfo
+{
+    height:70%;
+    border-radius:18px;
+    padding:10%;
+    
+    background-color:hsl(246, 80%, 60%);
+
+}
+
+
+
+#profilePic
+{
+    width:40%;
+    padding-top:40%;
+    border:solid white;
+    border-radius:100%;
+    background-image:url("../assets/images/image-jeremy.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-bottom:15%;
+}
+
+
+em
+{
+    font-size:2.5em;
+    font-style:none;
+    font-weight:none;
+}
+
+#timeTrackingOption
+{
+    flex:1;
+    width:100%;
+    padding:10%;
+
+    color:hsl(235, 45%, 61%);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#timeTrackingOption span:hover
+{
+    color:white;
+
+}
+
+.activityCard
+{
+    border-radius:18px;
+    
+    display:flex;
+
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.activityStat
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color:white;
+    border-radius:18px;
+    padding:8%;
+    background-color:hsl(235, 46%, 20%);
+    width:100%;
+    height:80%;
+}
+
+.topBand
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+.activityTime
+{
+    
+    font-size:3em;
+}
+
+.previousTime
+{
+    
+    color: hsl(236, 100%, 87%);
+}
+
+#Work
+{
+    background-color:hsl(15, 100%, 70%);
+    background-image:url("../assets/images/icon-work.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
+
+#Play
+{
+    background-color:hsl(195, 74%, 62%);
+    background-image:url("../assets/images/icon-play.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
+
+#Study
+{
+    background-color:hsl(348, 100%, 68%);
+    background-image:url("../assets/images/icon-study.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
+
+#Exercise
+{
+    background-color:hsl(145, 58%, 55%);
+    background-image:url("../assets/images/icon-exercise.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
+
+#Social
+{
+    background-color:hsl(264, 64%, 52%);
+    background-image:url("../assets/images/icon-social.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
+
+#SelfCare
+{
+    background-color:hsl(43, 84%, 65%);
+    background-image:url("../assets/images/icon-self-care.svg");
+    background-repeat:no-repeat;
+    background-position:top -8% right 10%;
+}
